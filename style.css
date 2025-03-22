@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(128, 128, 128, 0.247);
+    color: #000;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+.section-center{
+    width: 350px;
+    margin: auto;
+    transform: translateY(10rem);
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.section-center .grocery-form h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #000000d0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.section-center .grocery-form input{
+    padding: 5px 0;
+    padding-left: 10px;
+    padding-right: 25%;
+    border: 2px solid rgba(0, 60, 255, 0.945);
+    border-radius: 5px;
+}
+.section-center .grocery-form button{
+    padding: 5px 10px;
+    color: #000;
+    background: #00d6fc;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section-center .clear-btn{
+    background: transparent;
+    border: none;
+    color: red;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.section-center .grocery-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.section-center .grocery-item .edit-btn{
+    color: green;
+    background: transparent;
+    border: none;
+}
+.section-center .grocery-item .delete-btn{
+    background: transparent;
+    color: red;
+    border: none;
+    margin-left: 5px;
+}
+.section-center .alert{
+    color: #000;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.alert-danger{
+    background: rgba(255, 0, 0, 0.397);
+    letter-spacing: 3px;
+}
+.alert-success{
+    background: rgba(0, 128, 0, 0.781);
+    letter-spacing: 3px;
+    color: #fff;
+}
+.hide{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .section-center {
+    padding: 1.5rem;
+    transform: translateY(10rem);
+    }
+    .form-control {
+    flex-direction: column;
+    }
+    .submit-btn {
+    width: 100%;
+    }
+    .form-control input{
+        width: 71%;
+        margin-bottom: 5px;
+    }
+    .submit-btn {
+    padding: 0.75rem;
+    }
+}
